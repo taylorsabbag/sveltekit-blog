@@ -18,7 +18,7 @@
 
     <div class="tags">
         {#each data.meta.categories as category}
-            <span class="surface-4">&num;{category}</span>
+            <a href={`./categories/${category}`} class="surface-4">&num;{category}</a> // TODO: Style as button-link
         {/each}
     </div>
 
