@@ -15,7 +15,7 @@
     <ul class='posts'>
         {#each data.filteredPosts as post}
             <li class="post">
-                <a href={post.slug} class="title">{post.title}</a>
+                <a href={post.slug} class="title">{post.title}</a> // TODO: Fix bug where link leads to category page with post title as category
                 <p class="date">{formatDate(post.date)}</p>
                 <p class="description">{post.description}</p>
             </li>
