@@ -4,7 +4,6 @@ description: Second post.
 date: '2023-6-7'
 categories:
     - sveltekit
-    - svelte
 published: true
 ---
 
