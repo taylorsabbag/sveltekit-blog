@@ -123,7 +123,7 @@ Now, if you were writing a larger function with more complex operations and cond
 const fizzBuzz = n => new Array(n).fill(0).map((_, i) => (isEvenDivisibleOf(++i, 3) ? 'Fizz' : '') + (isEvenDivisibleOf(i, 5) ? 'Buzz' : '') || `${i}`)
 ```
 
-Ok, that's admittedly some dense code, so let's talk about what's happening. We start off by initializing and declaring our function using arrow function syntax. Since we have only a single parameter, we don't have to wrap it with () brackets. Then, we're directly (implicitly) returning the array we're creating, so we don't need the return keyword nor do we need to wrap the rest of our function in {} brackets.
+Ok, that's admittedly some dense code, so let's talk about what's happening. We start off by initializing and declaring our function using arrow function syntax. Since we have only a single parameter, we don't have to wrap it with () brackets. Then, we're directly (implicitly) returning the array we're creating, so we don't need the return keyword nor do we need to wrap the rest of our function in curly brackets.
 
 Then, we construct a new Array, fill each slot in its indices with a 0, and run our .map function. That's where the real heart of our function occurs. We don't really care about the actual 0's - they're just placeholders. So we grab the index instead, do a little trick where we increment the index before checking for its divisibility of the target number (this is because we start our count at 1, not 0), and then add the appropriate word responses if the current index is divisible by the response-number.
 
