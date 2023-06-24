@@ -15,10 +15,10 @@
         <h1>{data.meta.title}</h1>
         <p>Published at {formatDate(data.meta.date)}</p>
     </hgroup>
-
+	<!--TODO: Style as button-link--> 
     <div class="tags">
         {#each data.meta.categories as category}
-            <a href={`./categories/${category}`} class="surface-4">&num;{category}</a> // TODO: Style as button-link
+            <a href={`./categories/${category}`} class="surface-4">&num;{category}</a> 
         {/each}
     </div>
 
